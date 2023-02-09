@@ -17,7 +17,7 @@ export default async function Head({ params }) {
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="" />
+      <meta property="og:image" content="https://next-s3-public.s3.us-west-2.amazonaws.com/social/meta-delta-logo.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url} />
