@@ -1,9 +1,9 @@
 import DefaultMetaTags from '@components/DefaultMetaTags';
 
 export default async function Head({ params }) {
-  const title = 'example';
-  const description = 'CHANGEME: description for your application using next-sass';
-  const url = 'CHANGEME: your-production-url.tld';
+  const title = '∆ Delta';
+  const description = 'Store data on Filecoin directly with any storage provider. A new tool arriving on March 27th, 2023';
+  const url = 'https://delta.store';
 
   // SUMMARY_LARGE_IMAGE: 1500x785
   return (
@@ -23,7 +23,7 @@ export default async function Head({ params }) {
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content="" />
+      <meta property="twitter:image" content="https://next-s3-public.s3.us-west-2.amazonaws.com/social/meta-delta-logo.png" />
     </>
   );
 }

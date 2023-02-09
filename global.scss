@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Body';
+  src: url('https://next-s3-public.s3.us-west-2.amazonaws.com/storage-market-data.woff2') format('woff');
+}
+
 html,
 body,
 div,
@@ -104,11 +109,12 @@ html,
 body {
   --color-background: #ffffff;
   --color-text: #000000;
+  --color-primary: rgba(0, 2, 255, 1);
 
   font-size: 16px;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+  font-family: 'Body', -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 

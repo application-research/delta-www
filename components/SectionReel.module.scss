@@ -1,0 +1,28 @@
+.body {
+  display: flex;
+  padding: 0px 12px 48px 12px;
+  flex-wrap: wrap;
+}
+
+.group {
+  width: 25%;
+  padding: 24px 24px 24px 12px;
+
+  @media (max-width: 800px) {
+    width: 50%;
+  }
+}
+
+.heading {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  line-height: 1.5;
+  opacity: 0.5;
+}

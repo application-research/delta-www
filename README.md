@@ -1,17 +1,8 @@
-# NEXT-SASS
+# Delta-WWW
 
-Why would I use this?
-
-- Quickly start a project with TypeScript, SASS, and NextJS.
-- Convenient global CSS reset file.
-- You got tired of using CSS-in-JS.
-- You want to make a website quickly.
+https://delta.store
 
 ### Setup (MacOS)
-
-Start by cloning the repository, or by clicking on **Use this template** above.
-
-Then run the server
 
 ```sh
 npm install
@@ -39,7 +30,3 @@ DOCUMENT_DATABASE_HOST=xxxx
 DOCUMENT_DATABASE_PORT=5432
 DOCUMENT_DATABASE_PASSWORD=xxxx
 ```
-
-### Contact
-
-If you have questions ping me on Twitter, [@wwwjim](https://www.twitter.com/wwwjim).
