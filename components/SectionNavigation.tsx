@@ -5,19 +5,17 @@ import * as React from 'react';
 export default function SectionNavigation(props) {
   return (
     <div className={styles.body}>
-      <span className={styles.left}>∆ Delta</span>
+      <a className={styles.left} href="/">
+        ∆ Delta
+      </a>
       <span className={styles.right}>
-        <span className={styles.content}>
-          <span className={styles.link}>
-            ➝ Documentation <span className={styles.subtle}>(coming soon)</span>
+        {!props.hideRegistry ? (
+          <span className={styles.content}>
+            <a href="/registry" className={styles.link}>
+              ➝ Registry
+            </a>
           </span>
-          <span className={styles.link}>
-            ➝ Github<span className={styles.subtle}>(coming soon)</span>
-          </span>
-          <span className={styles.link}>
-            ➝ Registry <span className={styles.subtle}>(coming soon)</span>
-          </span>
-        </span>
+        ) : null}
       </span>
     </div>
   );

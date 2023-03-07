@@ -13,11 +13,21 @@
   font-size: 2rem;
   font-weight: 700;
   font-style: italic;
+  text-decoration: none;
+
+  &:visited {
+    color: #000;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .right {
   min-width: 10%;
   width: 100%;
+  min-height: 62px;
 }
 
 .content {
@@ -38,6 +48,7 @@
   margin-bottom: 16px;
   background: var(--color-text);
   color: var(--color-background);
+  text-decoration: none;
 
   &:last-child {
     margin-right: 0px;
