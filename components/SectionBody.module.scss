@@ -10,3 +10,47 @@
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
 }
+
+.performance {
+  font-family: 'Body';
+  margin-top: 16px;
+}
+
+.dataTag {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.dataTagLeft {
+  flex-shrink: 0;
+  width: 120px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.dataTagRight {
+  min-width: 10%;
+  width: 100%;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dataTagLeftQuote {
+  flex-shrink: 0;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.dataTagRightQuote {
+  font-family: baskerville, serif;
+  min-width: 10%;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 24px 8px 24px 8px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.025);
+}
