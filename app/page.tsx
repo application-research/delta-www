@@ -13,7 +13,6 @@ export default async function Page(props) {
     <DefaultLayout>
       <SectionNavigation />
       <SectionHero />
-      <SectionReel />
       <SectionBody />
       <SectionFooter />
     </DefaultLayout>

@@ -2,6 +2,12 @@
   padding: 0 24px 0 24px;
 }
 
+.image {
+  display: block;
+  max-width: 768px;
+  width: 100%;
+}
+
 .paragraph {
   margin-top: 24px;
   font-size: 1.25rem;
@@ -22,13 +28,16 @@
   color: #fff;
   justify-content: space-between;
   margin-bottom: 1px;
+  max-width: 800px;
 }
 
 .dataTagLeft {
   flex-shrink: 0;
   width: 120px;
   padding: 8px;
+  font-size: 1.25rem;
   background: rgba(0, 0, 0, 0.9);
+  align-self: stretch;
 }
 
 .dataTagRight {
@@ -36,12 +45,15 @@
   width: 100%;
   padding: 8px;
   background: rgba(0, 0, 0, 0.8);
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  align-self: stretch;
 }
 
 .dataTagLeftQuote {
   flex-shrink: 0;
   width: 120px;
-  background: rgba(0, 0, 0, 0.9);
+  align-self: stretch;
 }
 
 .dataTagRightQuote {
@@ -53,4 +65,7 @@
   padding: 24px 8px 24px 8px;
   color: #000;
   background: rgba(0, 0, 0, 0.025);
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  align-self: stretch;
 }
