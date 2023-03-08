@@ -2,6 +2,12 @@
   padding: 0 24px 0 24px;
 }
 
+.label {
+  margin-top: 48px;
+  font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
 .image {
   display: block;
   max-width: 768px;
@@ -38,12 +44,14 @@
   font-size: 1.25rem;
   background: rgba(0, 0, 0, 0.9);
   align-self: stretch;
+  text-align: right;
 }
 
 .dataTagRight {
   min-width: 10%;
   width: 100%;
-  padding: 8px;
+  padding: 8px 8px 24px 8px;
+  font-size: 1.25rem;
   background: rgba(0, 0, 0, 0.8);
   overflow-wrap: break-word;
   white-space: pre-wrap;
@@ -57,13 +65,13 @@
 }
 
 .dataTagRightQuote {
-  font-family: baskerville, serif;
+  font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
   min-width: 10%;
   width: 100%;
   line-height: 1.5;
   font-size: 1rem;
   padding: 24px 8px 24px 8px;
-  color: #000;
+  color: rgba(0, 0, 0, 0.75);
   background: rgba(0, 0, 0, 0.025);
   overflow-wrap: break-word;
   white-space: pre-wrap;

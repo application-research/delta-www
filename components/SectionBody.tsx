@@ -53,9 +53,17 @@ export default function SectionBody(props) {
 
   return (
     <div className={styles.body}>
+      <div className={styles.label}>
+        <strong>Delta Data Manager</strong> ➝ manage and import a massive quantity of deals into your storage provider.
+      </div>
       <img src="https://user-images.githubusercontent.com/310223/221113426-80a53e2b-9eb1-470c-a26b-f3aba69008f6.png" className={styles.image} />
 
-      <p className={styles.paragraph}>
+      <div className={styles.label}>
+        <strong>Delta white-label</strong> ➝ get a website with your data, Filecoin address, and every deal made with it.
+      </div>
+      <img src="https://user-images.githubusercontent.com/310223/223874359-ce0aa15b-8e96-40ef-be38-893d16bbaf19.png" className={styles.image} />
+
+      <p className={styles.paragraph} style={{ marginTop: 88 }}>
         We're releasing a new tool <strong>March 27th, 2023</strong> that will help you onboard your data to any Filecoin Storage Provider including yours.
       </p>
       <p className={styles.paragraph}>Here are our alpha testing results and performance.</p>
@@ -85,9 +93,11 @@ export default function SectionBody(props) {
           ). Delta's goal is to perform at least 25% of the work for the Filecoin Storage Network by the end of 2023.
         </DataQuote>
 
-        <DataLine label="What if we scaled Delta 1000x?">{Utilities.bytesToSize((data.total_e2e_deals_in_bytes + data.total_import_deals_in_bytes) * 1000)}</DataLine>
+        <DataLine label="Total estimated potential if we run multiple Delta instances">
+          {Utilities.bytesToSize((data.total_e2e_deals_in_bytes + data.total_import_deals_in_bytes) * 1000)}
+        </DataLine>
 
-        <DataLine label="How many storage providers did we work with?">{data.total_miners}</DataLine>
+        <DataLine label="Total number of storage providers this Delta node worked with">{data.total_miners}</DataLine>
 
         <DataLine label="Total piece commitment made by one node">{data.total_piece_commitment_made}</DataLine>
 
@@ -101,6 +111,8 @@ export default function SectionBody(props) {
           <a href="https://github.com/application-research/delta-dm">https://github.com/application-research/delta-dm</a>
           <br />
           <a href="https://github.com/application-research/delta-nextjs-client">https://github.com/application-research/delta-nextjs-client</a>
+          <br />
+          <a href="https://github.com/application-research/delta-nextjs-white-label-app">https://github.com/application-research/delta-nextjs-white-label-app</a>
         </DataQuote>
         <DataLine label="API + key generation">✅</DataLine>
         <DataLine label="Manage your own Filecoin wallet">✅</DataLine>
@@ -117,7 +129,12 @@ export default function SectionBody(props) {
         <DataLine label="Supports HTTP">✅</DataLine>
         <DataLine label="Supports Bitswap">✅</DataLine>
         <DataLine label="CAR Generation">❓</DataLine>
-        <DataQuote>Delta currently doesn't have its own CAR generation right now but it will be part of the "convenience" tooling later on.</DataQuote>
+        <DataQuote>
+          Delta currently doesn't have its own CAR generation right now but it will be part of the "convenience" tooling later on. See examples of this below:
+          <br />
+          <br />
+          <a href="https://github.com/anjor/filecoin_data_prep_tools">https://github.com/anjor/filecoin_data_prep_tools</a>
+        </DataQuote>
         <DataLine label="CommP calculation for each piece">✅</DataLine>
         <DataLine label="Inclusion proofs">✅</DataLine>
         <DataQuote>
