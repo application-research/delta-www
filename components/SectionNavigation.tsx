@@ -11,7 +11,7 @@ export default function SectionNavigation(props) {
       <span className={styles.right}>
         {!props.hideRegistry ? (
           <span className={styles.content}>
-            <a href="/registry" className={styles.link}>
+            <a href="https://registry.delta.store" target="_blank" className={styles.link}>
               ➝ Registry
             </a>
           </span>

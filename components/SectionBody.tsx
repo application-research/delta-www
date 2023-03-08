@@ -97,6 +97,11 @@ export default function SectionBody(props) {
         <DataLine label="Minimum file size">Any</DataLine>
         <DataLine label="Runs on cloud, bare metal">✅</DataLine>
         <DataLine label="GUI for file management, import deals, settings">✅</DataLine>
+        <DataQuote>
+          <a href="https://github.com/application-research/delta-dm">https://github.com/application-research/delta-dm</a>
+          <br />
+          <a href="https://github.com/application-research/delta-nextjs-client">https://github.com/application-research/delta-nextjs-client</a>
+        </DataQuote>
         <DataLine label="API + key generation">✅</DataLine>
         <DataLine label="Manage your own Filecoin wallet">✅</DataLine>
         <DataLine label="Track storage providers">✅</DataLine>
@@ -111,7 +116,8 @@ export default function SectionBody(props) {
         <DataLine label="Optional deal prepping engine">✅</DataLine>
         <DataLine label="Supports HTTP">✅</DataLine>
         <DataLine label="Supports Bitswap">✅</DataLine>
-        <DataLine label="CAR Generation">✅</DataLine>
+        <DataLine label="CAR Generation">❓</DataLine>
+        <DataQuote>Delta currently doesn't have its own CAR generation right now but it will be part of the "convenience" tooling later on.</DataQuote>
         <DataLine label="CommP calculation for each piece">✅</DataLine>
         <DataLine label="Inclusion proofs">✅</DataLine>
         <DataQuote>
